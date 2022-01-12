@@ -48,7 +48,65 @@
         </div>
     </div>
     <!-- End of Nav Section -->
-    <h1>This is the Booking Page</h1>
+    
+    <!-- Booking Section -->
+    <section id="form" data-aos="fade-up">
+        <div class="container">
+            <h3 class="form__title">Book Table</h3>
+            <div class="form__wrapper">
+                <form>
+                    <div class="form__group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="first_name" id="firstName" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="last_name" id="lastName" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="tableType">Table Type</label>
+                        <select name="table_type" id="tableType" required>
+                            <option selected disabled>Choose</option>
+                            <option value="small">Small (2 people)</option>
+                            <option value="medium">Medium (4 people)</option>
+                            <option value="large">Large (6 people)</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="guestNumber">Guest Number</label>
+                        <input type="number" name="guest_number" id="guestNumber" min="1" max="10" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="placement">Placement</label>
+                        <select name="placement" id="placement" required>
+                            <option selected disabled>Choose</option>
+                            <option value="outdoor">Outdoor</option>
+                            <option value="indoor">Indoor</option>
+                            <option value="rooftop">Rooftop</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="time">Time</label>
+                        <input type="time" name="time" id="time" required>
+                    </div>
+                    <div class="form__group textarea">
+                        <label for="note">Note</label>
+                        <textarea name="note" id="note" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End of Booking Section -->
 
     <!-- Footer Section -->
     <footer>
